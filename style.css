@@ -20,21 +20,35 @@
   --ff-accent: "Raleway", sans-serif;
   --ff-base: "Open Sans", sans-serif;
 
-  --fs-heading: var(--ff-accent);
-  --fs-body: var(--ff-base);
+  --spacing-50: 4px;
+  --spacing-100: 8px;
+  --spacing-150: 12px;
+  --spacing-200: 16px;
+  --spacing-250: 20px;
+  --spacing-300: 24px;
+  --spacing-350: 28px;
+  --spacing-400: 32px;
+  --spacing-500: 40px;
+  --spacing-600: 48px;
+  --spacing-700: 60px;
+  --spacing-800: 100px;
+  --spacing-900: 160px;
+  --spacing-1000: 240px;
 
-  --spacing: ;
-
-  --fs-300: 13px;
-  --fs-400: 14px;
-  --fs-500: 15px;
-  --fs-600: 16px;
-  --fs-700: ;
-  --fs-800: ;
-
-  --fs-body: var(--fs-600);
-  --fs-nav: ;
-  --fs-button: ;
+  /* Desktop */
+  --fs-xsmall: 12px;                    /* Smallest Text */
+  --fs-small: 14px;                     /* Detail Text */
+  --fs-regular: 16px;                   /* Body Text */
+  --fs-regular-alt: 18px;               /* Alternative Body Text */
+  --fs-subtitle: 18px;                  /* Subtitle */
+  --fs-title-small: 24px;               /* Title Text */
+  --fs-title-regular: 28px;             /* Title Text Alternative */
+  --fs-main-title-small: 32px;          /* Main Text */
+  --fs-main-title-regular: 38px;        /* Main Text */
+  --fs-main-title-large: 42px;          /* Main Text */
+  --fs-display-small: 60px;             /* Display Text */
+  --fs-display-regular: 72px;           /* Display Text */
+  --fs-display-large: 80px;             /* Display Text */
 }
 
 /* ======================================= */
@@ -83,7 +97,6 @@ select {
 
 p {
   overflow-wrap: break-word;
-  /* max-width: 75ch; */
   text-wrap: pretty; /*prevent alone words*/
   line-height: 1.5;
 }
@@ -103,7 +116,8 @@ h6 {
 /* ========|| General Styling ||========== */
 /* ======================================= */
 body {
-  font-size: var(--fs-body);
+  font-size: var(--fs-regular);
+  font-family: var(--ff-base);
 }
 
 
