@@ -20,6 +20,9 @@
   --ff-accent: "Raleway", sans-serif;
   --ff-base: "Open Sans", sans-serif;
 
+  --fs-heading: var(--ff-accent);
+  --fs-body: var(--ff-base);
+
   --spacing: ;
 
   --fs-300: 13px;
