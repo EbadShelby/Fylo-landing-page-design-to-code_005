@@ -2,20 +2,23 @@
 /* ========|| Custom Properties ||======== */
 /* ======================================= */
 :root {
-  --clr-primary: ;
+  --clr-primary-800: hsl(243, 87%, 12%);
 
-  --clr-secondary: ;
+  --clr-primary-700: hsl(238, 22%, 44%);
 
-  --clr-accent: ;
+  --clr-accent-blue:  hsl(224, 93%, 58%);
+  --clr-accent-green: hsl(170, 45%, 43%);
 
   --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-200: hsl(240, 75%, 98%);
+  --clr-neutral-300: hsl(0, 0%, 75%);
 
   --fw-regular: 400;
   --fw-medium: 500;
   --fw-bold: 700;
 
-  --ff-accent: ;
-  --ff-base: ;
+  --ff-accent: "Raleway", sans-serif;
+  --ff-base: "Open Sans", sans-serif;
 
   --spacing: ;
 
@@ -26,7 +29,7 @@
   --fs-700: ;
   --fs-800: ;
 
-  --fs-body: ;
+  --fs-body: var(--fs-600);
   --fs-nav: ;
   --fs-button: ;
 }
@@ -97,7 +100,7 @@ h6 {
 /* ========|| General Styling ||========== */
 /* ======================================= */
 body {
-  font-family: var(--ff-base);
+  font-size: var(--fs-body);
 }
 
 
