@@ -20,35 +20,35 @@
   --ff-accent: "Raleway", sans-serif;
   --ff-base: "Open Sans", sans-serif;
 
-  --spacing-50: 4px;
-  --spacing-100: 8px;
-  --spacing-150: 12px;
-  --spacing-200: 16px;
-  --spacing-250: 20px;
-  --spacing-300: 24px;
-  --spacing-350: 28px;
-  --spacing-400: 32px;
-  --spacing-500: 40px;
-  --spacing-600: 48px;
-  --spacing-700: 60px;
-  --spacing-800: 100px;
-  --spacing-900: 160px;
-  --spacing-1000: 240px;
+  --spacing-50: .25rem;
+  --spacing-100: .5rem;
+  --spacing-150: .75rem;
+  --spacing-200: 1rem;
+  --spacing-250: 1.25rem;
+  --spacing-300: 1.5rem;
+  --spacing-350: 1.75rem;
+  --spacing-400: 2rem;
+  --spacing-500: 2.5rem;
+  --spacing-600: 3rem;
+  --spacing-700: 3.75rem;
+  --spacing-800: 6.25rem;
+  --spacing-900: 10rem;
+  --spacing-1000: 15rem;
 
   /* Desktop */
-  --fs-xsmall: 12px;                    /* Smallest Text */
-  --fs-small: 14px;                     /* Detail Text */
-  --fs-regular: 16px;                   /* Body Text */
-  --fs-regular-alt: 18px;               /* Alternative Body Text */
-  --fs-subtitle: 18px;                  /* Subtitle */
-  --fs-title-small: 24px;               /* Title Text */
-  --fs-title-regular: 28px;             /* Title Text Alternative */
-  --fs-main-title-small: 32px;          /* Main Text */
-  --fs-main-title-regular: 38px;        /* Main Text */
-  --fs-main-title-large: 42px;          /* Main Text */
-  --fs-display-small: 60px;             /* Display Text */
-  --fs-display-regular: 72px;           /* Display Text */
-  --fs-display-large: 80px;             /* Display Text */
+  --fs-xsmall: .75rem;                    /* Smallest Text */
+  --fs-small: .875rem;                     /* Detail Text */
+  --fs-regular: 1rem;                   /* Body Text */
+  --fs-regular-alt: 1.125rem;               /* Alternative Body Text */
+  --fs-subtitle: 1.125rem;                  /* Subtitle */
+  --fs-title-small: 1.5rem;               /* Title Text */
+  --fs-title-regular: 1.75rem;             /* Title Text Alternative */
+  --fs-main-title-small: 2rem;          /* Main Text */
+  --fs-main-title-regular: 2.375rem;        /* Main Text */
+  --fs-main-title-large: 2.625rem;          /* Main Text */
+  --fs-display-small: 3.75rem;             /* Display Text */
+  --fs-display-regular: 4.5rem;           /* Display Text */
+  --fs-display-large: 5rem;             /* Display Text */
 }
 
 /* ======================================= */
