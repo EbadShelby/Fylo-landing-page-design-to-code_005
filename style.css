@@ -168,6 +168,9 @@ li {
   color: var(--clr-accent-green);
   text-decoration: none;
 }
+.feature__link:hover {
+  opacity: .7;
+}
 .feature__link span {
   padding-block: .25em;
   border-bottom: 2px solid var(--clr-accent-green);
@@ -218,6 +221,7 @@ li {
   padding: 0.75em 1.5em;
   font-size: var(--fs-small);
   color: var(--clr-primary-800);
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, .2);
   border-radius: 0.25em;
   border: 1px solid var(--clr-primary-700);
 }
@@ -234,8 +238,15 @@ li {
   background-color: var(--clr-accent-blue);
   color: var(--clr-neutral-200);
   font-size: var(--fs-small);
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, .2);
+  cursor: pointer;
 }
-
+.button:hover {
+  opacity: .9;
+}
+.button:active {
+  opacity: .8;
+}
 /* ======================================= */
 /* ==========|| footer Style ||=========== */
 /* ======================================= */
@@ -266,6 +277,9 @@ li {
 .footer__nav a {
   color: var(--clr-neutral-200);
   text-decoration: none;
+}
+.footer__nav a:hover {
+  color: var(--clr-accent-blue);
 }
 .footer__social {
   display: flex;
@@ -324,8 +338,41 @@ li {
 @media (min-width: 600px) {
 }
 @media (min-width: 768px) {
+  h1 {
+    font-size: var(--fs-main-title-regular);
+  }
+  h2 {
+    font-size: var(--fs-main-title-small);
+  }
+  .bg-curve {
+    background: url(images/bg-curve-desktop.svg) bottom no-repeat;
+    background-size: 450em;
+  }
+  .header__logo {
+    max-width: 8em;
+  }
+  .header__nav-list {
+    font-size: var(--fs-small);
+    gap: var(--spacing-500);
+  }
   .even-cols {
     grid-template-columns: 1fr 1fr;
+    grid-template-areas: "first second";
+  }
+  .even-cols > * {
+    place-content: center;
+  }
+  .even-cols > :nth-child(1) {
+    grid-area: second;
+  }
+  .even-cols > :nth-child(2) {
+    grid-area: first;
+  }
+  .text-center {
+    text-align: start;
+  }
+  .testimonial {
+    margin-inline: 0 auto;
   }
   .footer-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -333,5 +380,29 @@ li {
   .footer__nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+  .even-cols-cta {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-900);
+  }
+  .even-cols-cta > * {
+    align-content: center;
+  }
+  .hero__cta {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .even-cols-form button {
+    margin-right: auto;
+    padding-inline: 4em;
+  }
+  .footer__social {
+    justify-content: start;
+    align-items: start;
+  }
+}
+@media (min-width: 1000px) {
+  .bg-curve {
+    background-size: 500em;
   }
 }
