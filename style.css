@@ -14,7 +14,6 @@
   --clr-neutral-300: hsl(0, 0%, 75%);
 
   --fw-regular: 400;
-  --fw-medium: 500;
   --fw-bold: 700;
 
   --ff-accent: "Raleway", sans-serif;
@@ -118,20 +117,70 @@ h6 {
 body {
   font-size: var(--fs-regular);
   font-family: var(--ff-base);
+  font-weight: var(--fw-medium);
 }
-
-
+h1 {
+  font-size: var(--fs-title-small);
+}
+h2 {
+  font-size: var(--fs-subtitle);
+}
+li {
+  list-style: none;
+}
 /* ======================================= */
 /* ==========|| Header Style ||=========== */
 /* ======================================= */
-
-
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.header__logo {
+  max-width: 5em;
+}
+.header__nav-list {
+  display: flex;
+  gap: var(--spacing-300);
+  font-size: var(--fs-xsmall);
+  font-weight: var(--fw-bold);
+  color: var(--clr-primary-700);
+}
 
 /* ======================================= */
 /* ===========|| Main Style ||============ */
 /* ======================================= */
+.even-cols {
+  display: grid;
+  gap: var(--spacing-500);
+}
 
+.hero__cta {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-200);
+}
+/* =============|| Input ||============== */
+.email-input {
+  padding: .5em 1em;
+  font-size: var(--fs-small);
+  color: var(--clr-primary-800);
+  border-radius: .25em;
+  border: 1px solid var(--clr-primary-700);
+}
+.email-input::placeholder {
+  color: var(--clr-neutral-300);
+}
 
+/* =============|| Button ||============== */
+.button {
+  padding-block: .75em;
+  font-weight: var(--fw-bold);
+  border: none;
+  border-radius: .25em;
+  background-color: var(--clr-accent-blue);
+  color: var(--clr-neutral-200);
+  font-size: var(--fs-small);
+}
 
 /* ======================================= */
 /* ==========|| footer Style ||=========== */
@@ -142,9 +191,26 @@ body {
 /* ======================================= */
 /* ============|| Utilities ||============ */
 /* ======================================= */
+.wrapper {
+  max-width: 90%;
+  margin-inline: auto;
+}
 
-
-
+.text-center {
+  text-align: center;
+}
+.fw-bold {
+  font-weight: var(--fw-bold);
+}
+.flow > :not(:last-child)  {
+  margin-bottom: var(--spacing-400);
+}
+.low-flow > :not(:last-child) {
+  margin-bottom: var(--spacing-200);
+}
+.clr-primary-800 {
+  color: var(--clr-primary-800);
+}
 /* ======================================= */
 /* ===========|| Breakpoints ||=========== */
 /* ======================================= */

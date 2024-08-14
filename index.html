@@ -28,18 +28,20 @@
     />
   </head>
   <body>
-    <header class="header">
+    <header>
       <div class="wrapper">
-        <div>
-          <img src="images/logo.svg" alt="page-logo" />
+        <div class="header">
+          <div>
+            <img class="header__logo" src="images/logo.svg" alt="page-logo" />
+          </div>
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li><a href="#"></a>Features</li>
+              <li><a href="#"></a>Team</li>
+              <li><a href="#"></a>Sign in</li>
+            </ul>
+          </nav>
         </div>
-        <nav class="header__nav">
-          <ul class="header__nav-list">
-            <li><a href="#"></a>Features</li>
-            <li><a href="#"></a>Team</li>
-            <li><a href="#"></a>Sign in</li>
-          </ul>
-        </nav>
       </div>
     </header>
 
@@ -50,18 +52,18 @@
             <div>
               <img src="images/illustration-1.svg" alt="illustration-1" />
             </div>
-            <div>
-              <div>
+            <div class="text-center flow">
+              <div class="flow">
                 <h1>
                   All your files in one secure location, accessible anywhere.
                 </h1>
-                <p>
+                <p class="clr-primary-800">
                   Fylo stores your most important files in one secure location.
                   Access them wherever you need, share and collaborate with
                   friends, family, and co-workers.
                 </p>
               </div>
-              <div>
+              <div class="hero__cta">
                 <input
                   class="email-input"
                   placeholder="Enter your email.."
@@ -80,19 +82,21 @@
             <div>
               <img src="images/illustration-2.svg" alt="illustration-2" />
             </div>
-            <div>
-              <div>
-                <h2>Stay productive, wherever you are</h2>
-                <p>
-                  Never let location be an issue when accessing your files. Fylo
-                  has you covered for all of your file storage needs.
-                </p>
-                <p>
-                  Securely share files and folders with friends, family and
-                  colleagues for live collaboration. No email attachments
-                  required!
-                </p>
-                <a class="feature__link" href="#"><p>See how Fylo works</p></a>
+            <div class="flow">
+              <div class="flow">
+                <h2 class="text-center">Stay productive, wherever you are</h2>
+                <div class="low-flow">
+                  <p>
+                    Never let location be an issue when accessing your files. Fylo
+                    has you covered for all of your file storage needs.
+                  </p>
+                  <p>
+                    Securely share files and folders with friends, family and
+                    colleagues for live collaboration. No email attachments
+                    required!
+                  </p>
+                </div>
+                <a class="feature__link text-center" href="#"><p>See how Fylo works</p></a>
               </div>
               <div>
                 <img src="images/icon-quotes.svg" alt="icon-quotes" />
@@ -122,8 +126,8 @@
       <section>
         <div class="wrapper">
           <div class="even-cols">
-            <div>
-              <h2>Get early access today</h2>
+            <div class="low-flow">
+              <h2 class="text-center">Get early access today</h2>
               <p>
                 It only takes a minute to sign up and our free starter tier is
                 extremely generous. If you have any questions, our support team
